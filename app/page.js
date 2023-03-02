@@ -1,13 +1,8 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from "next/image";
+import { JetBrains_Mono } from "next/font/google";
 
-
-const inter = Inter({ subsets: ['latin'] })
+const jetBrains_Mono = JetBrains_Mono({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <h1 className="text-7xl text-tbp font-bold">
-      Hello, Next.js!
-    </h1>
-  )
+	return <h1 className={jetBrains_Mono.className}>Hello, Next.js!</h1>;
 }
