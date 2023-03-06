@@ -1,8 +1,10 @@
-import Image from "next/image";
-import { JetBrains_Mono } from "next/font/google";
-
-const jetBrains_Mono = JetBrains_Mono({ subsets: ["latin"] });
-
 export default function Home() {
-	return <h1 className={jetBrains_Mono.className}>Hello, Next.js!</h1>;
+	return (
+		<div className="flex flex-1 flex-col justify-center items-center p-8 h-screen">
+			<h1 className="font-sans text-gray-50 text-7xl font-extrabold text-center">
+				Nothing Beats
+				<br /> The🔔
+			</h1>
+		</div>
+	);
 }
